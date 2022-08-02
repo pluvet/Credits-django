@@ -141,26 +141,5 @@ Celery_BEAT_SCHEDULE = {
         "schedule": crontab(minute='*/1')
     }
 }
-#celery celery -A proj  worker --loglevel=info
-# flower flower -A proj --port=5555
-# beat celery -A proj beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
 
-
-#   colas de trabajo RQ FASTAPI instalar poetry para dependencias
-#   proyecto registrar usuarios en la API cuenta (nombre, correo, contraseña maluca) 
-#   crear perfil al mismo tiempo que se crea la cuenta del usuario (id de cuenta,perfil foto descripcion biografia edad ciudad hobby) se crea al mismo tiempo con la cuenta
-#   el perfil del usuario se crea de forma asincrona en RQ
-#   cada vez que se crea un usuaario de forma asincrona se crea el perfil  
-#   responde que la cuenta ya se creo
-#
-#   no voy a usar postgres voy a usar mongodb inserts en mongo un driver para mongo en fastapi
-#   aprender queries de mongo
-#
-#   endpoint de crear cuentas y crear perfiles
-#   endpoint para obtener los perfiles
-#   endpoint para editar los perfiles    
-#son 3 endpoints
-#poetry
-
-#  que los usuarios puedan editar su perfil
 
